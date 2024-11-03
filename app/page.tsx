@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import AnalyticsCards from "@/components/Analytic";
+import BentoGrid from "@/components/BentoGrid";
 
 export default function Home() {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
@@ -68,6 +69,7 @@ export default function Home() {
         </div>
       </div>
       <AnalyticsCards />
+      <BentoGrid />
     </main>
   );
 }
