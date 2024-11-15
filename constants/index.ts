@@ -1,6 +1,7 @@
+import { iconItemsProps, navItemsProps, ProductItems } from "@/types";
 import { Heart, Search, ShoppingCart, User } from "lucide-react";
 import { v4 as uuid } from "uuid";
-export const navItems = [
+export const navItems: navItemsProps[] = [
   {
     id: uuid(),
     title: "home",
@@ -19,7 +20,7 @@ export const navItems = [
   },
 ];
 
-export const iconItems = [
+export const iconItems: iconItemsProps[] = [
   {
     id: uuid(),
     name: "register",
@@ -39,5 +40,118 @@ export const iconItems = [
     id: uuid(),
     name: "shopping-cart",
     icon: ShoppingCart,
+  },
+];
+
+export const ProductList: ProductItems[] = [
+  {
+    id: uuid(),
+    productName: "Laptop",
+    price: 1200,
+    quantity: 10,
+    category: "Electronics",
+    description: "High-performance laptop for professionals.",
+    imageUrl: "shop/laptop.jpg",
+    rating: 4.5,
+    isAvailable: true,
+  },
+  {
+    id: uuid(),
+    productName: "Smartphone",
+    price: 800,
+    quantity: 15,
+    category: "Electronics",
+    description: "Latest smartphone with powerful camera and processor.",
+    imageUrl: "shop/smartphone.jpg",
+    rating: 4.6,
+    isAvailable: true,
+  },
+  {
+    id: uuid(),
+    productName: "Headphones",
+    price: 150,
+    quantity: 30,
+    category: "Accessories",
+    description: "Noise-canceling headphones with immersive sound quality.",
+    imageUrl: "shop/headphones.jpg",
+    rating: 4.3,
+    isAvailable: true,
+  },
+  {
+    id: uuid(),
+    productName: "Smartwatch",
+    price: 200,
+    quantity: 20,
+    category: "Wearables",
+    description: "Smartwatch with fitness tracking and notifications.",
+    imageUrl: "shop/smartwatch.jpg",
+    rating: 4.2,
+    isAvailable: false,
+  },
+  {
+    id: uuid(),
+    productName: "Tablet",
+    price: 600,
+    quantity: 12,
+    category: "Electronics",
+    description: "Tablet with high-resolution display and fast processor.",
+    imageUrl: "shop/tablet.jpg",
+    rating: 4.4,
+    isAvailable: true,
+  },
+  {
+    id: uuid(),
+    productName: "Bluetooth Speaker",
+    price: 100,
+    quantity: 50,
+    category: "Accessories",
+    description: "Portable Bluetooth speaker with rich bass and clear sound.",
+    imageUrl: "shop/bluetooth-speaker.jpg",
+    rating: 4.5,
+    isAvailable: true,
+  },
+  {
+    id: uuid(),
+    productName: "Camera",
+    price: 950,
+    quantity: 8,
+    category: "Electronics",
+    description: "High-definition camera with professional-quality features.",
+    imageUrl: "shop/camera.jpg",
+    rating: 4.7,
+    isAvailable: true,
+  },
+  {
+    id: uuid(),
+    productName: "Gaming Console",
+    price: 500,
+    quantity: 5,
+    category: "Gaming",
+    description: "Next-generation gaming console with immersive gameplay.",
+    imageUrl: "shop/gaming-console.jpg",
+    rating: 4.8,
+    isAvailable: true,
+  },
+  {
+    id: uuid(),
+    productName: "Fitness Tracker",
+    price: 120,
+    quantity: 40,
+    category: "Wearables",
+    description: "Fitness tracker with heart rate monitoring and GPS.",
+    imageUrl: "shop/fitness-tracker.jpg",
+    rating: 4.3,
+    isAvailable: true,
+  },
+  {
+    id: uuid(),
+    productName: "E-reader",
+    price: 180,
+    quantity: 25,
+    category: "Electronics",
+    description: "E-reader with adjustable lighting and long battery life.",
+    imageUrl: "shop/e-reader.jpg",
+    rating: 4.6,
+    isAvailable: true,
   },
 ];
